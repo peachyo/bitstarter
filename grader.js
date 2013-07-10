@@ -71,8 +71,9 @@ if(require.main == module) {
 		//sys.puts(program.url);
 		rest.get(program.url).on('complete', function(result){
 			if( result instanceof Error) {
-				sys.puts('Error: ' + result.message);
+				console.log('Error: ' + result.message);
 			} else {
+				//sys.puts(result);
 				checkJson = checkHtml(result, program.checks, false);
 				outJson(checkJson);
 			}
