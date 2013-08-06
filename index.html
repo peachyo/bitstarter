@@ -1,7 +1,8 @@
 <!DOCTYPE>
 <html lang="en">
   <head>
-     <title>My First Bitstarter peachyo</title>
+    <meta charset="utf-8">
+    <title>My First Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">    
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
@@ -176,12 +177,18 @@
         border-color: #9AFF9A;
         border-width: 2px;
       }
-      
+	
+      div.addthis_toolbox {
+	width:180px;
+	margin: 0 auto;
+      }`      
      </style>
   </head>
   <body>
 
 
+<!-- NAVBAR
+    ================================================== -->
       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
 
 
@@ -271,9 +278,25 @@
               <div class="thermometer progress active">
                 <div class="bar bar-success" style="width: 60%;"></div>
                 <div class="bar bar-warning" style="width: 40%;"></div>  
- 	      </div>
-	    </div>	
-	</div>`
+              </div>
+          </div>
+          <div class="span6 offset3 order">
+            <button class="btn btn-success btn-large">Preoder</button>
+          </div>
+          <div class="span8 offset2 social">
+		<!-- AddThis Button BEGIN -->
+	    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+		<a class="addthis_button_preferred_1"></a>
+		<a class="addthis_button_preferred_2"></a>
+		<a class="addthis_button_compact"></a>
+		<a class="addthis_counter addthis_bubble_style"></a>
+       	    </div>
+            <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+       	    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5200514a0b92b6e1"></script>
+		<!-- AddThis Button END -->
+          </div>
+        </div>
+
         <div class="span2 tabbable tabs-left">
         <ul class="nav nav-tabs">
           <li class="active"><a href="#Art">Art</a></li>
